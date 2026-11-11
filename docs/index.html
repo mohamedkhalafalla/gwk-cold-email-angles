@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3 زوايا لأول Cold Email | Grow With Khalaf</title>
+<meta name="description" content="3 زوايا تبدأ بيها cold email لشركات B2B: الـ Case study، والـ Events، والـ Resource. كل زاوية بإيميل كامل تقدر تنسخه، وprompt لـ Claude.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3 زوايا لأول cold email">
+<meta property="og:description" content="Case study · Events · Resource: كل زاوية بإيميل كامل وأمثلة.">
+<meta property="og:image" content="https://mohamedkhalafalla.github.io/gwk-cold-email-angles/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#00273C">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #00273C;
+  --navy-2: #0A3550;
+  --cyan: #16ECED;
+  --ice: #D2FFFF;
+  --orange: #FF660F;
+  --peach: #FAD9C6;
+  --white: #FFFFFF;
+  --ink: #00273C;
+  --muted: #48606E;
+  --line: #DCE6EA;
+  --soft: #F4FAFB;
+  --radius: 16px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; overflow-x: clip; }
+body {
+  margin: 0;
+  font-family: 'Cairo', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  font-size: 18px;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+a { color: inherit; }
+bdi, .en { unicode-bidi: isolate; }
+code { font-family: var(--mono); font-size: .85em; background: var(--ice); color: var(--navy); padding: 1px 7px; border-radius: 6px; direction: ltr; unicode-bidi: isolate; white-space: nowrap; }
+
+/* ---------- top bar ---------- */
+.topbar { position: sticky; top: 0; z-index: 20; background: rgba(0, 39, 60, .96); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(22, 236, 237, .14); }
+.topbar .in { max-width: 1180px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; font-weight: 900; direction: ltr; letter-spacing: .2px; }
+.brand .dot { width: 30px; height: 30px; border-radius: 9px; background: var(--cyan); color: var(--navy); display: grid; place-items: center; font-size: 15px; font-weight: 900; }
+.brand b { color: var(--cyan); }
+.btn { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 12px 26px; font-weight: 800; font-size: 17px; text-decoration: none; border: 0; cursor: pointer; font-family: inherit; transition: transform .15s ease, box-shadow .15s ease; white-space: nowrap; }
+.btn:hover { transform: translateY(-1px); }
+.btn-cyan { background: var(--cyan); color: var(--navy); box-shadow: 0 0 34px rgba(22, 236, 237, .35); }
+.btn-ghost { background: transparent; color: var(--white); border: 1.5px solid rgba(255, 255, 255, .35); }
+.btn-navy { background: var(--navy); color: var(--white); }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.topbar .btn { padding: 9px 20px; font-size: 15px; }
+
+/* ---------- hero ---------- */
+.hero {
+  background:
+    radial-gradient(rgba(255, 255, 255, .07) 2px, transparent 2px) 0 0 / 44px 44px,
+    radial-gradient(circle at 8% 4%, rgba(22, 236, 237, .24) 0%, transparent 42%),
+    var(--navy);
+  color: var(--white);
+  overflow: hidden;
+}
+.hero .in { max-width: 1180px; margin: 0 auto; padding: 44px 20px 0; display: grid; grid-template-columns: 1.25fr .75fr; gap: 24px; align-items: end; }
+.crumbs { font-size: 15px; color: rgba(255, 255, 255, .6); margin-bottom: 18px; }
+.crumbs span { margin: 0 6px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; color: var(--cyan); letter-spacing: .5px; border: 1px solid rgba(22, 236, 237, .4); border-radius: 999px; padding: 4px 14px; }
+.hero h1 { font-size: clamp(36px, 5.4vw, 62px); line-height: 1.3; font-weight: 900; margin: 18px 0 14px; }
+.hero h1 .hl { color: var(--orange); }
+.hero .lead { font-size: clamp(18px, 2vw, 22px); color: rgba(255, 255, 255, .82); margin: 0 0 26px; max-width: 640px; }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 26px; }
+.byline { display: flex; align-items: center; gap: 12px; padding-bottom: 44px; font-size: 15px; color: rgba(255, 255, 255, .7); }
+.byline .av { width: 44px; height: 44px; border-radius: 50%; background: var(--cyan); color: var(--navy); display: grid; place-items: center; font-weight: 900; font-size: 18px; }
+.byline strong { display: block; color: var(--white); font-size: 16px; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 4px; }
+.facts span::before { content: "✓"; color: var(--cyan); font-weight: 900; margin-left: 6px; }
+.hero-art { position: relative; align-self: end; display: flex; justify-content: center; min-height: 420px; }
+.hero-art img.me { width: min(420px, 100%); display: block; filter: drop-shadow(0 0 32px rgba(22, 236, 237, .35)); position: relative; z-index: 1; }
+.logos { position: absolute; top: 18px; inset-inline: 0; display: flex; justify-content: center; align-items: center; gap: 0; direction: ltr; z-index: 2; }
+.tile { width: 76px; height: 76px; border-radius: 20px; background: var(--white); display: grid; place-items: center; box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
+.tile img { width: 62%; height: 62%; }
+.link-line { width: 74px; height: 6px; background: repeating-linear-gradient(90deg, var(--cyan) 0 12px, transparent 12px 22px); border-radius: 4px; }
+
+/* ---------- layout ---------- */
+.wrap { max-width: 1180px; margin: 0 auto; padding: 48px 20px 30px; display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 56px; }
+article { min-width: 0; max-width: 780px; }
+aside.toc { position: sticky; top: 90px; align-self: start; font-size: 15px; line-height: 1.6; }
+.toc h4 { font-size: 13px; letter-spacing: .6px; color: var(--muted); margin: 0 0 10px; font-weight: 800; }
+.toc ol { list-style: none; margin: 0; padding: 0; border-right: 2px solid var(--line); }
+.toc li a { display: block; padding: 6px 14px; text-decoration: none; color: var(--muted); border-right: 2px solid transparent; margin-right: -2px; }
+.toc li a:hover { color: var(--navy); }
+.toc li a.on { color: var(--navy); font-weight: 800; border-right-color: var(--orange); }
+.toc-mobile { display: none; }
+
+article h2 { font-size: clamp(26px, 3.2vw, 34px); line-height: 1.4; font-weight: 900; margin: 64px 0 14px; }
+article h2:first-of-type { margin-top: 8px; }
+article h2 .n { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: var(--navy); color: var(--cyan); font-size: 20px; margin-left: 10px; vertical-align: 4px; }
+article h3 { font-size: 21px; font-weight: 800; margin: 34px 0 8px; }
+article p { margin: 0 0 16px; }
+article ul { padding-right: 22px; margin: 0 0 16px; }
+article li { margin-bottom: 6px; }
+.big { font-size: 20px; }
+.hl { color: var(--orange); }
+
+/* ---------- callouts ---------- */
+.callout { border-radius: var(--radius); padding: 20px 24px; margin: 24px 0; }
+.callout .label { font-size: 13px; font-weight: 900; letter-spacing: .6px; margin-bottom: 4px; display: block; }
+.callout p:last-child { margin-bottom: 0; }
+.callout.warn { background: var(--peach); }
+.callout.warn .label { color: #B8430A; }
+.callout.tip { background: var(--ice); }
+.callout.tip .label { color: var(--navy); }
+.callout.dark { background: var(--navy); color: var(--white); }
+.callout.dark .label { color: var(--cyan); }
+
+/* ---------- tables ---------- */
+.tbl { overflow-x: auto; margin: 18px 0 26px; border: 1px solid var(--line); border-radius: var(--radius); }
+table { width: 100%; border-collapse: collapse; font-size: 16px; line-height: 1.7; }
+th { background: var(--navy); color: var(--white); text-align: right; font-weight: 800; font-size: 13px; letter-spacing: .5px; padding: 12px 16px; white-space: nowrap; }
+td { padding: 14px 16px; border-top: 1px solid var(--line); vertical-align: top; }
+tr:nth-child(even) td { background: var(--soft); }
+.agent { display: inline-block; direction: ltr; unicode-bidi: isolate; font-weight: 800; background: var(--ice); color: var(--navy); padding: 2px 10px; border-radius: 8px; white-space: nowrap; font-size: 15px; }
+.gloss { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; }
+.pts { font-weight: 900; color: var(--orange); font-size: 20px; text-align: center; }
+.num { font-weight: 900; color: var(--orange); }
+.group-title { display: flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 800; margin: 28px 0 0; }
+.group-title::before { content: ""; width: 10px; height: 10px; border-radius: 3px; background: var(--cyan); box-shadow: 0 0 0 4px var(--ice); }
+
+/* ---------- prompt + code ---------- */
+.prompt { border: 1.5px solid var(--navy); border-radius: var(--radius); margin: 18px 0 26px; overflow: hidden; }
+.prompt-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--navy); color: var(--white); padding: 10px 14px 10px 10px; }
+.prompt-head .t { font-weight: 800; font-size: 15px; }
+.prompt-head .t small { color: var(--cyan); font-size: 12px; letter-spacing: .6px; margin-left: 8px; }
+.copy { font-family: inherit; font-weight: 800; font-size: 14px; background: var(--cyan); color: var(--navy); border: 0; border-radius: 999px; padding: 6px 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.copy.done { background: var(--white); }
+.prompt pre { margin: 0; padding: 18px 20px; white-space: pre-wrap; word-break: break-word; font-family: 'Cairo', sans-serif; font-size: 16px; line-height: 1.9; background: var(--soft); unicode-bidi: plaintext; }
+.prompt pre .ph { background: var(--peach); border-radius: 5px; padding: 0 4px; font-weight: 700; }
+.code { background: #001B2A; border-radius: var(--radius); margin: 14px 0 22px; overflow: hidden; }
+.code .prompt-head { background: #00121C; }
+.code pre { margin: 0; padding: 16px 20px; color: var(--ice); font-family: var(--mono); font-size: 15px; line-height: 1.8; direction: ltr; text-align: left; overflow-x: auto; white-space: pre; }
+.code pre .c { color: #6E8C99; }
+
+/* ---------- install tabs ---------- */
+.tabs { display: flex; gap: 6px; background: var(--soft); border: 1px solid var(--line); padding: 6px; border-radius: 999px; width: fit-content; max-width: 100%; margin: 18px 0 8px; }
+.tabs button { font-family: inherit; font-size: 16px; font-weight: 800; border: 0; background: transparent; color: var(--muted); padding: 8px 20px; border-radius: 999px; cursor: pointer; white-space: nowrap; }
+.tabs button[aria-selected="true"] { background: var(--navy); color: var(--white); }
+.panel[hidden] { display: none; }
+.steps { counter-reset: s; list-style: none; padding: 0 !important; margin: 18px 0 !important; }
+.steps > li { counter-increment: s; position: relative; padding: 2px 52px 14px 0; margin: 0 !important; }
+.steps > li::before { content: counter(s); position: absolute; right: 0; top: 0; width: 36px; height: 36px; border-radius: 50%; background: var(--ice); color: var(--navy); font-weight: 900; display: grid; place-items: center; font-size: 17px; }
+.steps > li:not(:last-child)::after { content: ""; position: absolute; right: 17px; top: 40px; bottom: 4px; width: 2px; background: var(--line); }
+.download { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; background: var(--navy); color: var(--white); border-radius: var(--radius); padding: 20px 24px; margin: 20px 0; }
+.download .meta { font-size: 15px; color: rgba(255, 255, 255, .72); line-height: 1.6; }
+.download .meta strong { color: var(--white); font-size: 17px; display: block; direction: ltr; text-align: right; }
+
+/* ---------- agents cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 18px 0; }
+.card { border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; background: var(--white); }
+.card .agent { margin-bottom: 6px; }
+a.card { display: block; text-decoration: none; color: inherit; transition: border-color .15s ease; }
+a.card:hover { border-color: var(--navy); }
+.card p { margin: 0; font-size: 15.5px; line-height: 1.75; color: #1D3B4B; }
+
+/* ---------- footer ---------- */
+.end {
+  background:
+    radial-gradient(rgba(255, 255, 255, .07) 2px, transparent 2px) 0 0 / 44px 44px,
+    radial-gradient(circle at 92% 0%, rgba(22, 236, 237, .22) 0%, transparent 40%),
+    var(--navy);
+  color: var(--white); margin-top: 40px;
+}
+.end .in { max-width: 1180px; margin: 0 auto; padding: 56px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+.end h3 { font-size: clamp(26px, 3vw, 34px); font-weight: 900; margin: 0 0 6px; line-height: 1.4; }
+.end p { margin: 0; color: rgba(255, 255, 255, .75); }
+.end .row { display: flex; flex-wrap: wrap; gap: 12px; }
+.foot { text-align: center; font-size: 14px; color: rgba(255, 255, 255, .55); padding: 18px 20px 26px; border-top: 1px solid rgba(255, 255, 255, .08); direction: ltr; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 960px) {
+  .wrap { grid-template-columns: 1fr; gap: 0; padding-top: 28px; }
+  aside.toc { display: none; }
+  .toc-mobile { display: block; border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 18px; margin-bottom: 26px; background: var(--soft); }
+  .toc-mobile summary { cursor: pointer; font-weight: 800; padding: 10px 0; }
+  .toc-mobile ol { margin: 0 0 12px; padding-right: 22px; font-size: 16px; line-height: 1.9; }
+  .toc-mobile a { text-decoration: none; color: var(--navy); }
+  .hero .in { grid-template-columns: 1fr; padding-top: 28px; }
+  .hero-art { min-height: 0; order: -1; display: none; }
+  .byline { padding-bottom: 36px; }
+}
+/* On phones every table row becomes a card, so nothing scrolls sideways. */
+@media (max-width: 640px) {
+  .tbl { border: 0; border-radius: 0; overflow: visible; }
+  .tbl table, .tbl tbody, .tbl tr, .tbl td { display: block; width: 100%; }
+  .tbl thead { display: none; }
+  .tbl tr { border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; margin-bottom: 10px; background: var(--white) !important; }
+  .tbl tr td { background: none !important; border: 0; padding: 3px 0; }
+  .tbl td:first-child { font-weight: 700; }
+  .tbl td[data-l]:not(:first-child):not(:nth-child(2))::before { content: attr(data-l) ": "; color: var(--muted); font-size: 13px; font-weight: 800; }
+  .tbl td.pts { display: inline-block; width: auto; font-size: 17px; text-align: right; }
+  .tbl td.pts::after { content: " نقطة"; font-size: 13px; color: var(--muted); }
+  .tbl tr:has(td.pts) td:first-child { display: inline-block; width: auto; margin-left: 10px; }
+  .gloss { display: inline; margin: 0 8px 0 0; }
+}
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  .topbar .btn { display: none; }
+  .hero .ctas .btn { width: 100%; justify-content: center; }
+  .callout { padding: 16px 18px; }
+  td, th { padding: 11px 12px; }
+  table { font-size: 15px; }
+  .tabs { width: 100%; }
+  .tabs button { flex: 1; padding: 8px 10px; font-size: 15px; }
+  .steps > li { padding-right: 46px; }
+}
+
+
+/* ---------- this page ---------- */
+.hero-art { align-self: center; min-height: 0; padding-bottom: 44px; flex-direction: column; align-items: center; gap: 26px; }
+.hero-art .logos { position: static; }
+.hero-art .tile { width: 104px; height: 104px; border-radius: 26px; }
+.sig { display: flex; flex-direction: column; gap: 10px; align-items: stretch; }
+.sig span { display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .16); border-radius: 999px; padding: 8px 20px; font-weight: 800; }
+.sig span i { width: 12px; height: 12px; border-radius: 6px; background: var(--cyan); flex: none; }
+.sig span.on { background: var(--orange); border-color: var(--orange); }
+.sig span.on i { background: var(--white); }
+.code pre { unicode-bidi: plaintext; }
+/* Cold email guide additions */
+.tile.sl { background: transparent; overflow: hidden; }
+.tile.sl img { width: 100%; height: 100%; }
+.math { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px 14px; margin: 26px 0; padding: 22px; border-radius: 18px; background: var(--navy); color: var(--white); }
+.math div { text-align: center; min-width: 96px; }
+.math b { display: block; font-size: 34px; font-weight: 900; line-height: 1.1; color: var(--cyan); direction: ltr; }
+.math span { font-size: 14px; opacity: .85; }
+.math i { font-style: normal; font-size: 26px; font-weight: 900; color: var(--orange); }
+.math .on b { color: var(--orange); }
+.card.bad { border-color: var(--orange); }
+.card.bad .agent { text-decoration: line-through; text-decoration-color: var(--orange); text-decoration-thickness: 2px; }
+.check { list-style: none; padding: 0 !important; margin: 18px 0 !important; display: grid; gap: 8px; }
+.check li { margin: 0 !important; }
+.check label { display: flex; gap: 12px; align-items: flex-start; border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; cursor: pointer; background: var(--white); line-height: 1.7; }
+.check input { width: 20px; height: 20px; margin-top: 4px; accent-color: var(--orange); flex: none; }
+.check label:has(input:checked) { background: var(--ice); border-color: var(--navy); }
+.progress { display: flex; align-items: center; gap: 12px; font-weight: 800; }
+.progress .bar { flex: 1; height: 10px; border-radius: 6px; background: var(--line); overflow: hidden; }
+.progress .bar i { display: block; height: 100%; width: 0; background: var(--orange); transition: width .2s ease; }
+@media (max-width: 560px) { .math b { font-size: 28px; } .math div { min-width: 80px; } }
+.nw { direction: ltr; unicode-bidi: isolate; white-space: nowrap; display: inline-block; }
+/* ---------- cold email copy page ---------- */
+.hero-art { align-self: center; min-height: 0; padding-bottom: 44px; }
+.mail { width: min(400px, 100%); background: var(--white); color: var(--navy); border-radius: 22px; padding: 22px 24px; box-shadow: 0 0 0 6px rgba(22, 236, 237, .18), 0 30px 60px rgba(0, 0, 0, .35); font-size: 15.5px; line-height: 1.8; }
+.mail .subj { display: flex; gap: 8px; align-items: baseline; border-bottom: 1px solid var(--line); padding-bottom: 10px; margin-bottom: 12px; }
+.mail .subj small { font-size: 12px; color: var(--muted); font-weight: 800; direction: ltr; }
+.mail .subj b { font-size: 19px; }
+.mail p { margin: 0 0 8px; }
+.mail mark { background: none; color: inherit; border-bottom: 2.5px solid var(--orange); padding-bottom: 1px; }
+.mail .wc { margin-top: 12px; display: inline-block; font-size: 13px; font-weight: 800; background: var(--ice); border-radius: 999px; padding: 2px 12px; }
+.email { border: 1.5px solid var(--line); border-radius: var(--radius); margin: 18px 0 26px; overflow: hidden; background: var(--white); }
+.email.good { border-color: var(--navy); }
+.email.bad { border-color: var(--orange); }
+.email .head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 16px; background: var(--soft); border-bottom: 1px solid var(--line); font-size: 14px; font-weight: 800; }
+.email.good .head { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.email.bad .head { background: var(--peach); border-color: var(--orange); }
+.email .body { padding: 16px 20px; line-height: 1.95; }
+.email .body p { margin: 0 0 10px; }
+.email .body p:last-child { margin: 0; }
+.email .body .s { font-weight: 900; font-size: 19px; }
+.tag { display: inline-block; font-size: 12px; font-weight: 900; border-radius: 6px; padding: 0 8px; margin-inline-start: 6px; vertical-align: 2px; background: var(--ice); color: var(--navy); }
+.email.bad .tag { background: var(--white); color: #B8430A; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 18px 0 24px; }
+.pair > div { border-radius: 14px; padding: 14px 18px; border: 1.5px solid var(--line); }
+.pair .no { border-color: var(--orange); background: #FFF6F0; }
+.pair .yes { border-color: var(--navy); background: var(--ice); }
+.pair b { display: block; font-size: 13px; letter-spacing: .4px; margin-bottom: 4px; }
+.pair .no b { color: #B8430A; }
+.pair p { margin: 0; font-size: 16.5px; line-height: 1.8; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 22px; padding: 0; list-style: none; }
+.chips li { margin: 0 !important; background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 4px 16px; font-weight: 800; font-size: 16px; }
+.chips li.on { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.lead-tile { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--white); border: 1px solid var(--line); vertical-align: -10px; margin-inline-end: 6px; }
+.lead-tile img { width: 22px; height: 22px; }
+@media (max-width: 640px) { .pair { grid-template-columns: 1fr; } }
+/* ---------- angles page ---------- */
+.stack { display: flex; flex-direction: column; gap: 12px; width: min(380px, 100%); }
+.ang { display: flex; align-items: center; gap: 16px; background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .16); border-radius: 20px; padding: 14px 20px; }
+.ang b { font-size: 46px; font-weight: 900; line-height: 1; width: 40px; text-align: center; }
+.ang span { font-weight: 900; font-size: 22px; direction: ltr; unicode-bidi: isolate; }
+.ang small { display: block; font-size: 14px; font-weight: 700; color: rgba(255, 255, 255, .7); }
+.ang.a1 b { color: var(--cyan); } .ang.a2 b { color: var(--orange); } .ang.a3 b { color: var(--peach); }
+.ang.a2 { border-color: var(--orange); }
+article h2 .n.o { background: var(--orange); color: var(--white); }
+.when { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 18px 0 26px; }
+.when a { display: block; text-decoration: none; color: inherit; border: 1.5px solid var(--line); border-radius: 16px; padding: 16px 18px; transition: border-color .15s ease; }
+.when a:hover { border-color: var(--navy); }
+.when .k { font-size: 13px; font-weight: 900; color: var(--muted); letter-spacing: .4px; }
+.when .t { font-size: 20px; font-weight: 900; direction: ltr; unicode-bidi: isolate; display: block; text-align: right; }
+.when p { margin: 6px 0 0; font-size: 15.5px; line-height: 1.75; }
+@media (max-width: 760px) { .when { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="in">
+    <a class="brand" href="#top"><span class="dot">G</span><span>Grow With <b>Khalaf</b></span></a>
+    <a class="btn btn-cyan" href="#prompt">الـ&nbsp;prompt</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="in">
+    <div>
+      <div class="crumbs">موارد<span>/</span>Cold Email<span>/</span>الزوايا</div>
+      <span class="eyebrow">3 زوايا + إيميل لكل زاوية + prompt</span>
+      <h1>أول <span class="nw">cold email</span> ليك؟ ابدأ من <span class="hl">زاوية</span></h1>
+      <p class="lead">أصعب حاجة في أول إيميل هي «أقوله إيه في الأول؟». الزاوية هي السبب اللي بيخلّيه يقرا. دي 3 زوايا بستخدمها مع شركات B2B، وكل واحدة معاها إيميل كامل تقدر تنسخه.</p>
+      <div class="ctas">
+        <a class="btn btn-cyan" href="#case-study">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          ابدأ من الزاوية 1
+        </a>
+        <a class="btn btn-ghost" href="#pick">أختار أنهي زاوية؟</a>
+      </div>
+      <div class="byline">
+        <div class="av">K</div>
+        <div>
+          <strong>من Grow With Khalaf</strong>
+          <div class="facts"><span>B2B</span><span>أمثلة مصرية</span><span>إيميل جاهز لكل زاوية</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="stack">
+        <div class="ang a1"><b>1</b><div><span>Case study</span><small>وريه شغلك مع شركة زيه</small></div></div>
+        <div class="ang a2"><b>2</b><div><span>Events</span><small>كلّمه عن الـ Event اللي رايحه</small></div></div>
+        <div class="ang a3"><b>3</b><div><span>Resource</span><small>ابعتله حاجة مفيدة قبل ما تطلب</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <article>
+
+    <details class="toc-mobile">
+      <summary>في الصفحة دي</summary>
+      <ol data-toc></ol>
+    </details>
+
+    <p class="big">العميل مايعرفكش، فأول إيميل لازم يرد على سؤال واحد: «ليه أقرا ده دلوقتي؟». كل زاوية من دول بترد عليه بطريقة مختلفة: بنتيجة حقيقية، أو بحاجة هو رايحها، أو بهدية مفيدة.</p>
+
+    <div class="callout tip">
+      <span class="label">قبل ما تبدأ</span>
+      <p>الصفحة دي عن <b>أول سطر وفكرة الإيميل</b>. قواعد الكتابة نفسها (الـ&nbsp;subject، والطول، والـ&nbsp;follow-up) في <a href="https://mohamedkhalafalla.github.io/gwk-cold-email-copy/">دليل كتابة الـ&nbsp;cold email</a>، ولو الإيميلات بتروح spam ابدأ من <a href="https://mohamedkhalafalla.github.io/gwk-cold-email-setup/">الـ&nbsp;setup</a>.</p>
+    </div>
+
+    <!-- ===== pick ===== -->
+    <h2 id="pick">أختار أنهي زاوية؟</h2>
+    <p>مش لازم التلاتة مع كل عميل. اختار على حسب اللي في إيدك:</p>
+    <div class="when">
+      <a href="#case-study"><span class="k">عندك نتيجة مع شركة زيه</span><span class="t">Case study</span><p>أسهل طريقة تبني بيها الثقة من غير ما تبان إنك بتبيع.</p></a>
+      <a href="#events"><span class="k">هو رايح معرض أو مؤتمر قريب</span><span class="t">Events</span><p>العميل اللي بيجي من هنا بيبقى مهتم وحابب يسمعك.</p></a>
+      <a href="#resource"><span class="k">لسه ماعندكش نتايج كتير</span><span class="t">Resource</span><p>بتوريه جزء من شغلك قبل ما يدفع، وبيحس إنه مديون لك.</p></a>
+    </div>
+
+    <!-- ===== angle 1 ===== -->
+    <h2 id="case-study"><span class="n">1</span>زاوية الـ&nbsp;Case study</h2>
+    <p>بتوري العميل شغلك مع شركة <b>في نفس مجاله</b>، وبتعرض عليه تشرحله ببلاش إزاي وصلت للنتيجة دي. هو مش محتاج يصدقك، النتيجة بتتكلم.</p>
+    <h3>الإيميل بيتبني إزاي</h3>
+    <ol class="steps">
+      <li><b>شركة زيه:</b> نفس المجال، ونفس الحجم تقريبًا. لو مصنع، كلّمه عن مصنع. لو شركة توزيع، عن شركة توزيع.</li>
+      <li><b>المشكلة اللي كانت عندهم:</b> في سطر، وبكلام هو بيقوله لنفسه.</li>
+      <li><b>النتيجة برقم واحد:</b> وفي مدة محددة. «40% أكتر في 90 يوم» أقوى من «نتايج ممتازة».</li>
+      <li><b>العرض:</b> مكالمة قصيرة تشرحله فيها إزاي، ببلاش ومن غير التزام.</li>
+    </ol>
+    <div class="email good">
+      <div class="head"><span>الزاوية 1 · لمدير مصنع</span><button class="copy">انسخ</button></div>
+      <div class="body">
+        <p class="s">مصنع زيكم في العاشر <span class="tag">subject</span></p>
+        <p>أهلًا م. كريم،</p>
+        <p>اشتغلنا السنة اللي فاتت مع مصنع عبوات بلاستيك في العاشر من رمضان، بنفس حجمكم تقريبًا. <span class="tag">شركة زيه</span></p>
+        <p>كانت مشكلتهم إن أغلب طلبات عروض الأسعار جاية من نفس 5 عملا، وأي عميل بيقلل طلباته المصنع كله بيحس. <span class="tag">المشكلة</span></p>
+        <p>في 90 يوم بقى عندهم 40% طلبات عروض أسعار أكتر، من شركات أغذية ومنظفات ماكانوش بيتعاملوا معاها. <span class="tag">النتيجة</span></p>
+        <p>لو حابب، أشرحلك في مكالمة 15 دقيقة إزاي وصلنا للنتيجة دي، ببلاش ومن غير أي التزام. <span class="tag">العرض</span></p>
+        <p>محمد</p>
+      </div>
+    </div>
+    <div class="callout warn">
+      <span class="label">خد بالك</span>
+      <p>الرقم لازم يكون حقيقي من شغلك. ولو العميل طالب سرية، قول «مصنع عبوات في العاشر» من غير اسمه. ماتألفش case study: العميل ممكن يسأل عليها.</p>
+    </div>
+
+    <!-- ===== angle 2 ===== -->
+    <h2 id="events"><span class="n o">2</span>زاوية الـ&nbsp;Events</h2>
+    <p>عملاك بيروحوا معارض ومؤتمرات، وبيتكلموا فيها، وبيعرضوا فيها. الـ&nbsp;Event ده هو أول سطر في إيميلك. وعن تجربة، العميل اللي بيجي من الناحية دي بيبقى عميل مهتم وحابب يسمعك، لأنك بتكلمه عن حاجة هو مشغول بيها فعلًا.</p>
+    <h3>الخطوات</h3>
+    <ol class="steps">
+      <li><b>دوّر على الـ&nbsp;Events</b> اللي عميلك هيحضرها في الـ&nbsp;3 لـ&nbsp;6 شهور الجايين: معارض المجال بتاعه، ومؤتمراته، والـ&nbsp;Events على LinkedIn.</li>
+      <li><b>اسحب لستة الـ&nbsp;Speakers</b> من صفحة الـ&nbsp;Agenda أو Speakers في موقع الـ&nbsp;Event.</li>
+      <li><b>واسحب الحضور:</b> لستة العارضين (Exhibitors)، والناس اللي كاتبين على LinkedIn إنهم رايحين.</li>
+      <li><b>خلّي الـ&nbsp;Event هو أول سطر في الميل</b>، وكمّل كلامك بعدها على طول.</li>
+    </ol>
+    <div class="tbl"><table>
+      <thead><tr><th>مين</th><th>أول سطر</th></tr></thead>
+      <tbody>
+        <tr><td>Speaker</td><td>شفت إنك هتتكلم في [المعرض] في مارس عن [الموضوع].</td></tr>
+        <tr><td>شركة عارضة</td><td>شفت إن شركتكم عارضة في [المعرض] السنة دي.</td></tr>
+        <tr><td>حد رايح يحضر</td><td>شفت بوستك إنك رايح [المؤتمر]، أنا كمان هكون هناك.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="email good">
+      <div class="head"><span>الزاوية 2 · لـ&nbsp;Speaker في معرض</span><button class="copy">انسخ</button></div>
+      <div class="body">
+        <p class="s">كلمتك في [المعرض]</p>
+        <p>أهلًا أ. منى،</p>
+        <p>شفت إنك هتتكلمي في [المعرض] في مارس عن التصدير لأفريقيا. <span class="tag">الـ&nbsp;Event</span></p>
+        <p>ده بالظبط اللي شغالين عليه مع شركات توزيع مصرية: إزاي يلاقوا موزعين في السوق الجديد قبل ما يصرفوا على مكتب هناك. <span class="tag">الربط</span></p>
+        <p>لو هتكوني هناك، ينفع نتكلم 10 دقايق بعد الكلمة؟ ولو اليوم زحمة، أبعتلك اللي اتعلمناه في صفحة واحدة. <span class="tag">طلب صغير</span></p>
+        <p>محمد</p>
+      </div>
+    </div>
+    <div class="callout tip">
+      <span class="label">التوقيت</span>
+      <p>ابعت قبل الـ&nbsp;Event بـ&nbsp;3 لـ&nbsp;4 أسابيع، وfollow-up قبله بأسبوع، وواحد بعده بيومين: «اتبسطت بكلمتك عن…». بعد الـ&nbsp;Event الناس بتبقى فاضية تقرا أكتر.</p>
+    </div>
+
+    <!-- ===== angle 3 ===== -->
+    <h2 id="resource"><span class="n">3</span>زاوية الـ&nbsp;Resource</h2>
+    <p>بتبعت للعميل <b class="nw">Lead magnet</b>: حاجة مفيدة معمولة ليه هو بالذات، عشان تحفزه إنه يسمعك. يعني حاجة كده بتبعتهاله وتقوله «أنا تعبت عشانك»، فهو بيحس إنه مديون لك، وفي نفس الوقت بتوريه جزء من شغلك قبل ما يدفع.</p>
+    <div class="tbl"><table>
+      <thead><tr><th>الـ&nbsp;Resource</th><th>فيه إيه</th><th>بياخد منك</th></tr></thead>
+      <tbody>
+        <tr><td>Audit سريع</td><td>3 حاجات في موقعه أو إيميلاته أو صفحة LinkedIn بتاعته ممكن تتحسن، وأولهم تقدر تطبقها النهارده.</td><td>20–30 دقيقة</td></tr>
+        <tr><td>Template</td><td>شيت أو مستند جاهز يحل مشكلة عنده: متابعة عروض الأسعار، أو خطة زيارات العملا.</td><td>مرة واحدة، وبتعدّله لكل مجال</td></tr>
+        <tr><td>فيديو قصير</td><td>دقيقة أو اتنين، بتفتح فيها موقعه على الشاشة وتشرح حاجة واحدة تتحسن، وبتقول اسمه في الأول.</td><td>5 دقايق</td></tr>
+      </tbody>
+    </table></div>
+    <div class="email good">
+      <div class="head"><span>الزاوية 3 · Audit سريع</span><button class="copy">انسخ</button></div>
+      <div class="body">
+        <p class="s">عملتلك Audit سريع</p>
+        <p>أهلًا م. أحمد،</p>
+        <p>بصيت على موقعكم وصفحة الشركة على LinkedIn، وعملت Audit سريع لإزاي عميل جديد بيوصلكم. <span class="tag">تعبت عشانك</span></p>
+        <p>لقيت 3 حاجات سهلة ممكن تزود طلبات عروض الأسعار، أولهم إن فورم «اطلب عرض سعر» مش باين على الموبايل. <span class="tag">جزء من شغلك</span></p>
+        <p>حطيت التلاتة في صفحة واحدة، أبعتهالك؟ <span class="tag">سؤال سهل</span></p>
+        <p>محمد</p>
+      </div>
+    </div>
+    <h3>الـ&nbsp;Follow-ups على الزاوية دي</h3>
+    <p>الزاوية دي أنا جربتها مع الـ&nbsp;Follow-up emails بالذات، وجابت نتايج حلوة قوي. كل رسالة بتدّيه حاجة جديدة بدل ما تفكّره بالإيميل اللي فات:</p>
+    <div class="tbl"><table>
+      <thead><tr><th>الرسالة</th><th>بتبعت فيها</th></tr></thead>
+      <tbody>
+        <tr><td>Follow-up 1</td><td>الصفحة نفسها، حتى لو مردش: «بعتهالك عشان ماتضيعش».</td></tr>
+        <tr><td>Follow-up 2</td><td>فيديو دقيقة باسمه، بتشرح فيه أول نقطة على موقعه.</td></tr>
+        <tr><td>Follow-up 3</td><td>Template صغير بيكمّل الـ&nbsp;Audit، وسؤال: «أكلّم حد تاني في الفريق؟».</td></tr>
+      </tbody>
+    </table></div>
+    <div class="callout dark">
+      <span class="label">ليه بتشتغل</span>
+      <p>ده مبدأ المعاملة بالمثل (Reciprocity) اللي شرحه Robert Cialdini في كتاب Influence: لما حد يدّيك حاجة ليها قيمة من غير ما تطلب، بتحس إنك عايز ترد. عشان كده الـ&nbsp;Resource لازم يكون مفيد فعلًا ومعمول ليه، مش PDF عام.</p>
+    </div>
+    <div class="callout warn">
+      <span class="label">خد بالك</span>
+      <p>ادّيله <b>جزء</b> من شغلك، مش كله. نقطة واحدة يقدر يطبقها لوحده، والباقي محتاجك فيه.</p>
+    </div>
+
+    <!-- ===== prompt ===== -->
+    <h2 id="prompt"><span class="lead-tile"><img src="assets/claude.svg" alt=""></span>خلّي Claude يكتبه معاك</h2>
+    <p>ابعت الـ&nbsp;prompt ده لـ&nbsp;Claude، واختار الزاوية، وغيّر اللي بين الأقواس. ولو عندك صفحة الـ&nbsp;Event أو موقع العميل، الصقهم معاه.</p>
+    <div class="prompt">
+      <div class="prompt-head"><span class="t"><small>PROMPT</small>Cold email بزاوية</span><button class="copy">انسخ</button></div>
+      <pre>اكتبلي cold email لـ <span class="ph">[المنصب]</span> في <span class="ph">[اسم الشركة]</span>، شركة <span class="ph">[المجال والحجم]</span>.
+أنا بقدّم <span class="ph">[الحل بتاعك في سطر]</span>.
+
+الزاوية: <span class="ph">[Case study / Events / Resource]</span>
+- لو Case study: الشركة اللي اشتغلت معاها <span class="ph">[المجال والحجم]</span>، المشكلة <span class="ph">[...]</span>، النتيجة <span class="ph">[رقم حقيقي + المدة]</span>. اختم بعرض مكالمة 15 دقيقة ببلاش أشرح فيها إزاي.
+- لو Events: الـ Event <span class="ph">[الاسم والتاريخ]</span>، وهو <span class="ph">[Speaker / عارض / حاضر]</span> وموضوعه <span class="ph">[...]</span>. خلّي الـ Event هو أول سطر.
+- لو Resource: الـ Resource <span class="ph">[Audit / Template / فيديو]</span> وأهم حاجة فيه <span class="ph">[...]</span>. اختم بسؤال «أبعتهولك؟».
+
+القواعد:
+1. الـ subject كلمتين أو تلاتة.
+2. أول سطر عنه هو، مش عني.
+3. الإيميل كله من 75 لـ 100 كلمة.
+4. متألفش أرقام ولا أسماء: استخدم اللي أنا مدّيهولك بس.
+5. اكتب 2 follow-up، كل واحد فيه حاجة جديدة.
+
+اكتب <span class="ph">[بالعربي المصري / بالإنجليزي]</span>، بلغة بسيطة زي ما زميل بيكلم زميله.</pre>
+    </div>
+
+    <!-- ===== checklist ===== -->
+    <h2 id="checklist">قبل ما تدوس Send</h2>
+    <p>علّم على كل نقطة. العلامات بتتحفظ على جهازك بس.</p>
+    <ul class="check" data-check>
+      <li><label><input type="checkbox"><span>اخترت زاوية واحدة للإيميل ده، مش التلاتة مع بعض</span></label></li>
+      <li><label><input type="checkbox"><span>أول سطر هو الزاوية: النتيجة، أو الـ&nbsp;Event، أو الـ&nbsp;Resource</span></label></li>
+      <li><label><input type="checkbox"><span>الـ&nbsp;Case study من شركة في نفس مجاله، والرقم حقيقي</span></label></li>
+      <li><label><input type="checkbox"><span>الـ&nbsp;Event لسه جاي، في الـ&nbsp;3 لـ&nbsp;6 شهور الجايين</span></label></li>
+      <li><label><input type="checkbox"><span>الـ&nbsp;Resource معمول ليه هو، مش PDF عام</span></label></li>
+      <li><label><input type="checkbox"><span>آخر سطر طلب صغير أو سؤال سهل</span></label></li>
+      <li><label><input type="checkbox"><span>الإيميل كله من 75 لـ&nbsp;100 كلمة</span></label></li>
+      <li><label><input type="checkbox"><span>الـ&nbsp;follow-ups جاهزة، وكل واحد فيه حاجة جديدة</span></label></li>
+    </ul>
+    <div class="progress"><div class="bar"><i data-bar></i></div><span data-count>0 من 8</span></div>
+
+    <div class="callout dark">
+      <span class="label">ملحوظة</span>
+      <p>الأسماء والأرقام والمعارض في الصفحة دي أمثلة توضيحية، مش من عميل بعينه. Claude منتج من Anthropic، وإحنا مش تابعين ليهم.</p>
+    </div>
+
+  </article>
+
+  <aside class="toc">
+    <h4>في الصفحة دي</h4>
+    <ol data-toc></ol>
+  </aside>
+</div>
+
+<section class="end">
+  <div class="in">
+    <div>
+      <h3>عرفت الزاوية، فاضل الكتابة</h3>
+      <p>الـ&nbsp;subject، والطول، والطلب، والـ&nbsp;follow-ups في دليل لوحده.</p>
+    </div>
+    <div class="row">
+      <a class="btn btn-cyan" href="https://mohamedkhalafalla.github.io/gwk-cold-email-copy/">دليل كتابة الـ&nbsp;cold email</a>
+      <a class="btn btn-ghost" href="https://mohamedkhalafalla.github.io/gwk-cold-email-setup/">الـ&nbsp;setup خطوة بخطوة</a>
+    </div>
+  </div>
+  <div class="foot">Guide © 2026 Grow With Khalaf · Not affiliated with Anthropic</div>
+</section>
+<script>
+// Table of contents, built from the h2s so the two copies never drift.
+const heads = [...document.querySelectorAll('article h2[id]')];
+document.querySelectorAll('[data-toc]').forEach(list => {
+  heads.forEach(h => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent.trim().replace(/^\d+/, '');
+    li.appendChild(a);
+    list.appendChild(li);
+  });
+});
+const tocLinks = [...document.querySelectorAll('aside.toc a')];
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    tocLinks.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id));
+  });
+}, {rootMargin: '-90px 0px -70% 0px'});
+heads.forEach(h => spy.observe(h));
+
+// Label each cell with its column header, for the stacked phone layout.
+document.querySelectorAll('.tbl table').forEach(t => {
+  const labels = [...t.querySelectorAll('thead th')].map(th => th.textContent);
+  t.querySelectorAll('tbody tr').forEach(tr => [...tr.children].forEach((td, i) => td.dataset.l = labels[i]));
+});
+
+// Copy buttons copy the plain text of the block below them (rule tags left out).
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', async () => {
+  const box = b.closest('.prompt, .code, .email');
+  const src = box.querySelector('pre, .body').cloneNode(true);
+  src.querySelectorAll('.tag').forEach(t => t.remove());
+  const text = src.matches('pre') ? src.innerText : [...src.querySelectorAll('p')].map(p => p.textContent.trim()).join('\n\n');
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const ta = Object.assign(document.createElement('textarea'), {value: text});
+    document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove();
+  }
+  b.textContent = 'اتنسخ ✓'; b.classList.add('done');
+  setTimeout(() => { b.textContent = 'انسخ'; b.classList.remove('done'); }, 1600);
+}));
+
+// Checklist: ticks are kept in this browser only.
+const KEY = 'gwk-cold-email-angles-checklist';
+const boxes = [...document.querySelectorAll('[data-check] input')];
+let saved = [];
+try { saved = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch {}
+const paint = () => {
+  const n = boxes.filter(b => b.checked).length;
+  document.querySelector('[data-bar]').style.width = (n / boxes.length * 100) + '%';
+  document.querySelector('[data-count]').textContent = n + ' من ' + boxes.length;
+};
+boxes.forEach((b, i) => {
+  b.checked = !!saved[i];
+  b.addEventListener('change', () => {
+    try { localStorage.setItem(KEY, JSON.stringify(boxes.map(x => x.checked))); } catch {}
+    paint();
+  });
+});
+paint();
+</script>
+</body>
+</html>
